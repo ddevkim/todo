@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/fxjs/dist/fx.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="todo_window">
+      <p>todos</p>
+      <header>
+        <div id="register">
+          <svg id="complete_all_btn" viewBox="0 0 100 100">
+            <path
+              class="box_line"
+              d="M75.44,9.56H24.56c-8.28,0-15,6.72-15,15v50.89c0,8.28,6.72,15,15,15h50.89c8.28,0,15-6.72,15-15V24.56
+	                               C90.44,16.27,83.73,9.56,75.44,9.56z"
+            />
+            <polyline
+              class="check_line"
+              points="22.44,59.12 42.96,76.61 74.35,40.85 "
+            />
+            <polyline class="check_line" points="21.59,39.4 42.1,56.89 73.49,21.12 " />
+          </svg>
+          <input
+            type="text"
+            id="item_input"
+            class="register_item"
+            placeholder="오늘 할 일을 내일로 미루자"
+          />
+        </div>
+      </header>
+
+      <section id="todo_content"></section>
+
+      <footer>
+        <span id="show_left_items_count"></span>
+        <div id="item_filter">
+          <input type="button" value="All" />
+          <input type="button" value="Active" />
+          <input type="button" value="Completed" />
+          <input type="button" value="Clear" />
+        </div>
+      </footer>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,9 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="250684ee-30a6-41d7-b349-4e3505660f27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1eyZ7cN0ovD9hoLx4Qflk0huM4U" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v12.3.1/lib/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/todo/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="250684ee-30a6-41d7-b349-4e3505660f27" name="Default Changelist" comment="" />
+      <created>1595295626577</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595295626577</updated>
+      <workItem from="1595295629324" duration="830000" />
+      <workItem from="1595296908460" duration="53474000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="538" y="142" key="#CSS" timestamp="1595315297245">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="538" y="142" key="#CSS/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595315297245" />
+    <state x="613" y="425" key="Github.CreateGistDialog" timestamp="1595390739838">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="613" y="425" key="Github.CreateGistDialog/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595390739838" />
+    <state x="692" y="425" key="Github.ShareDialog" timestamp="1595295666247">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="692" y="425" key="Github.ShareDialog/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595295666247" />
+    <state x="661" y="201" key="Github.UntrackedFilesDialog" timestamp="1595295673087">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="661" y="201" key="Github.UntrackedFilesDialog/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595295673087" />
+    <state x="331" y="92" key="SettingsEditor" timestamp="1595307620962">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="331" y="92" key="SettingsEditor/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595307620962" />
+    <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup" timestamp="1595391551566">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595391551566" />
   </component>
 </project>
