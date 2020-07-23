@@ -23,6 +23,7 @@ $(document).ready(() => {
       const reg_check_kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
       const ct = e.currentTarget;
       if (checkInputByteLength(ct.value) > input_limit) {
+        alert("할 일은 간단 할수록 좋습니다.");
         if (reg_check_kor.test(ct.value.slice(-1))) {
           ct.value = ct.value.slice(0, -2);
         } else {
@@ -46,14 +47,16 @@ $(document).ready(() => {
   $section_content
     .on("click", ".delete_btn", (e) => {
       const $ct_item_list = $(e.currentTarget).closest(".item_list");
-      $ct_item_list.removeClass("opacity_show");
-      $ct_item_list.one(
-        "transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
-        () => {
-          $ct_item_list.remove();
-          countItemsAndStatusUpdate();
-        }
-      );
+      if ($ct_item_list.hasClass("completed") || confirm("끝내지도 않았는데 지우려구요?")) {
+        $ct_item_list.removeClass("opacity_show");
+        $ct_item_list.one(
+          "transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
+          () => {
+            $ct_item_list.remove();
+            countItemsAndStatusUpdate();
+          }
+        );
+      }
     })
     .on("click", ".complete_checkbox_svg, .item_text", (e) => {
       $(e.currentTarget).closest(".item_list").toggleClass("completed");
