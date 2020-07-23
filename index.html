@@ -37,6 +37,7 @@
             id="item_input"
             class="register_item"
             placeholder="오늘 할 일을 내일로 미루자"
+            autofocus
           />
         </div>
       </header>
@@ -45,11 +46,12 @@
 
       <footer>
         <span id="show_left_items_count"></span>
+        <span id="filter_box"></span>
         <div id="item_filter">
+          <input type="button" value="Clear" />
           <input type="button" value="All" />
           <input type="button" value="Active" />
           <input type="button" value="Completed" />
-          <input type="button" value="Clear" />
         </div>
       </footer>
       <script src="app.js"></script>

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="250684ee-30a6-41d7-b349-4e3505660f27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="jaemin &lt;jmk@marpple.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
   </component>
   <component name="ProjectId" id="1eyZ7cN0ovD9hoLx4Qflk0huM4U" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -44,13 +51,17 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/.nvm/versions/node/v12.3.1/lib/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/todo/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.app.js" />
       </list>
     </recent_temporary>
   </component>
@@ -65,18 +76,36 @@
       <option name="presentableId" value="Default" />
       <updated>1595295626577</updated>
       <workItem from="1595295629324" duration="830000" />
-      <workItem from="1595296908460" duration="53474000" />
+      <workItem from="1595296908460" duration="55210000" />
+      <workItem from="1595463685327" duration="58000" />
+      <workItem from="1595463770601" duration="4954000" />
     </task>
+    <task id="LOCAL-00001" summary="초기 기능 구현 및 css 적용">
+      <created>1595409769768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595409769768</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="초기 기능 구현 및 css 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="초기 기능 구현 및 css 적용" />
   </component>
   <component name="WindowStateProjectService">
     <state x="538" y="142" key="#CSS" timestamp="1595315297245">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="538" y="142" key="#CSS/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595315297245" />
+    <state x="356" y="40" key="CommitChangelistDialog2" timestamp="1595409769604">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="356" y="40" key="CommitChangelistDialog2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595409769604" />
     <state x="613" y="425" key="Github.CreateGistDialog" timestamp="1595390739838">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -89,10 +118,34 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="661" y="201" key="Github.UntrackedFilesDialog/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595295673087" />
+    <state width="1628" height="262" key="GridCell.Tab.0.bottom" timestamp="1595466226720">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1628" height="262" key="GridCell.Tab.0.bottom/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595466226720" />
+    <state width="1628" height="262" key="GridCell.Tab.0.center" timestamp="1595466226719">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1628" height="262" key="GridCell.Tab.0.center/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595466226719" />
+    <state width="1628" height="262" key="GridCell.Tab.0.left" timestamp="1595466226719">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1628" height="262" key="GridCell.Tab.0.left/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595466226719" />
+    <state width="1628" height="262" key="GridCell.Tab.0.right" timestamp="1595466226720">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1628" height="262" key="GridCell.Tab.0.right/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595466226720" />
     <state x="331" y="92" key="SettingsEditor" timestamp="1595307620962">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="331" y="92" key="SettingsEditor/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595307620962" />
+    <state x="340" y="208" key="Vcs.Push.Dialog.v2" timestamp="1595409774285">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="340" y="208" key="Vcs.Push.Dialog.v2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595409774285" />
+    <state x="467" y="229" width="746" height="614" key="find.popup" timestamp="1595466788583">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="467" y="229" width="746" height="614" key="find.popup/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595466788583" />
     <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup" timestamp="1595391551566">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

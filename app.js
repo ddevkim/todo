@@ -5,6 +5,7 @@ $(document).ready(() => {
   const $show_left_items_count = $("#show_left_items_count");
   const $item_filter = $("#item_filter");
   const $clear_btn = $item_filter.find("input[value='Clear']");
+  const $filter_box = $("#filter_box");
 
   $item_input.on("keydown", (e) => {
     const todo_item_text = e.currentTarget.value;
@@ -50,16 +51,19 @@ $(document).ready(() => {
     .on("click", "input:button[value='All']", (e) => {
       $(e.currentTarget).parent().attr("filter_category", "All");
       $section.find(".item_list").css("display", "flex");
+      $filter_box.css("left", 247).css("width", 38);
     })
     .on("click", "input:button[value='Active']", (e) => {
       $("input:button[value='All']").trigger("click");
       $(e.currentTarget).parent().attr("filter_category", "Active");
       $section.find(".completed").css("display", "none");
+      $filter_box.css("left", 290).css("width", 67);
     })
     .on("click", "input:button[value='Completed']", (e) => {
       $("input:button[value='All']").trigger("click");
       $(e.currentTarget).parent().attr("filter_category", "Completed");
       $section.find(".item_list:not(.completed)").css("display", "none");
+      $filter_box.css("left", 362).css("width", 115);
     })
     .on("click", "input:button[value='Clear']", () => {
       $section.find(".completed").remove();

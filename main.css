@@ -34,7 +34,7 @@ body {
 #complete_all_btn.all_completed .check_line{
   stroke: #248d4c;
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset .2s linear;
+  transition: stroke-dashoffset .3s cubic-bezier(0.09, 0.76, 0.79, 0.19);
 }
 
 #todo_window {
@@ -63,17 +63,19 @@ header, footer {
   height: 50px;
 }
 footer {
-  margin: 15px 0 0 220px;
+  display: flex;
+  position: relative;
+  margin: 15px 0 0 200px;
   flex-direction: row;
   justify-content: space-between;
   height: 50px;
   opacity: 0;
-  transition: opacity 0.2s linear;
+  transition: opacity 0.5s linear;
 }
 footer.opacity_show {
   display: flex;
   opacity: 1;
-  transition: opacity 0.2s linear;
+  transition: opacity 0.5s linear;
 }
 
 #register {
@@ -99,7 +101,7 @@ footer.opacity_show {
 .item_list {
   display: flex;
   opacity: 0;
-  transition: opacity 0.3s linear;
+  transition: opacity 0.5s linear;
   flex-direction: row;
   justify-content: space-between;
   background: #2A2D32;
@@ -114,6 +116,7 @@ footer.opacity_show {
   transition: opacity 0.3s linear;
 }
 #show_left_items_count {
+  width: 100px;
   margin: auto 30px;
   color: #757575;
   transition: color 0.3s linear
@@ -122,9 +125,13 @@ footer.opacity_show {
   color: rgba(255, 224, 84, 0.59);
 }
 #item_filter {
+  display: flex;
+  width: 300px;
+  justify-content: flex-end;
   margin: auto;
 }
 #item_filter > input {
+  margin: auto 2px;
   transition: box-shadow 0.2s linear;
   font-size: 1em;
   font-weight: lighter;
@@ -143,18 +150,22 @@ footer.opacity_show {
 }
 #item_filter > input:active {
   border: 1px solid #9f9104;
-
 }
 #item_filter > input[value="All"] {
+  z-index:3;
   color: darkorange;
 }
 #item_filter > input[value="Active"] {
+  z-index:3;
   color: firebrick;
 }
 #item_filter > input[value="Completed"] {
+  z-index:3;
   color: darkolivegreen;
 }
 #item_filter > input[value="Clear"] {
+  z-index:3;
+  margin-right: 5px;
   color: #6e6e6d;
   display: none;
 }
@@ -214,7 +225,7 @@ footer.opacity_show {
 .item_list.completed svg .check_line {
   stroke: #244a8d;
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset .2s linear;
+  transition: stroke-dashoffset .3s cubic-bezier(0.09, 0.76, 0.79, 0.19);
 }
 
 .item_list .delete_btn {
@@ -263,4 +274,16 @@ footer.opacity_show {
 .item_list .delete_btn:hover .x_line {
   stroke: #823420;
   transition: all .2s linear;
+}
+footer #filter_box {
+  position: absolute;
+  width: 38px;
+  height: 35px;
+  border-radius: 8px;
+  left: 247px;
+  top: 7px;
+  background: transparent;
+  box-shadow: inset 3px 3px 5px #1d2023,
+  inset -2px -2px 3px #373b41;
+  transition: left 0.5s cubic-bezier(0.65, 0.01, 0.32, 0.99), width 0.5s cubic-bezier(0.65, 0.01, 0.32, 0.99);
 }
