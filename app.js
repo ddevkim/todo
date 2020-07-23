@@ -7,16 +7,29 @@ $(document).ready(() => {
   const $clear_btn = $item_filter.find("input[value='Clear']");
   const $filter_box = $("#filter_box");
 
-  $item_input.on("keydown", (e) => {
-    const todo_item_text = e.currentTarget.value;
-    if (todo_item_text && e.which === 13) {
-      e.preventDefault();
-      addList(todo_item_text);
-      e.currentTarget.value = "";
-      countItemsAndStatusUpdate();
-      $section_content.find(".item_list").last().addClass("opacity_show");
-    }
-  });
+  $item_input
+    .on("keydown", (e) => {
+      const todo_item_text = e.currentTarget.value;
+      if (todo_item_text && e.which === 13) {
+        e.preventDefault();
+        addList(todo_item_text);
+        e.currentTarget.value = "";
+        countItemsAndStatusUpdate();
+        $section_content.find(".item_list").last().addClass("opacity_show");
+      }
+    })
+    .on("keyup", (e) => {
+      const input_limit = 40;
+      const reg_check_kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+      const ct = e.currentTarget;
+      if (checkInputByteLength(ct.value) > input_limit) {
+        if (reg_check_kor.test(ct.value.slice(-1))) {
+          ct.value = ct.value.slice(0, -2);
+        } else {
+          ct.value = ct.value.slice(0, -1);
+        }
+      }
+    });
 
   $complete_all_btn.on("click", (e) => {
     const $ct = $(e.currentTarget);
@@ -62,13 +75,16 @@ $(document).ready(() => {
     .on("click", "input:button[value='Completed']", (e) => {
       $("input:button[value='All']").trigger("click");
       $(e.currentTarget).parent().attr("filter_category", "Completed");
-      $section_content.find(".item_list:not(.completed)").css("display", "none");
+      $section_content
+        .find(".item_list:not(.completed)")
+        .css("display", "none");
       $filter_box.css("left", 362).css("width", 115);
     })
     .on("click", "input:button[value='Clear']", () => {
       $section_content.find(".completed").remove();
       countItemsAndStatusUpdate();
     });
+
   $left_items_count_indicator.hover(
     (e) => {
       $(e.currentTarget).css("color", "#987d25");
@@ -162,5 +178,17 @@ $(document).ready(() => {
         <polyline class="x_line" points="71.76,28.24 50,50 28.24,71.76 "/>
       </svg>
     </div>`);
+  }
+
+  function checkInputByteLength(input) {
+    const reg_check_kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+    return _.go(
+      input,
+      _.map((x) => {
+        if (reg_check_kor.test(x)) return 2;
+        else return 1;
+      }),
+      _.reduce((a, b) => a + b),
+    );
   }
 });
