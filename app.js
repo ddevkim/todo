@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  const $section = $("section");
+  const $section_content = $("section#content");
   const $item_input = $("#item_input");
   const $complete_all_btn = $("#complete_all_btn");
   const $left_items_count_indicator = $("#left_items_count_indicator");
@@ -14,23 +14,23 @@ $(document).ready(() => {
       addList(todo_item_text);
       e.currentTarget.value = "";
       countItemsAndStatusUpdate();
-      $section.find(".item_list").last().addClass("opacity_show");
+      $section_content.find(".item_list").last().addClass("opacity_show");
     }
   });
 
   $complete_all_btn.on("click", (e) => {
     const $ct = $(e.currentTarget);
     if ($ct.hasClass("all_completed")) {
-      $section.find(".item_list").removeClass("completed");
+      $section_content.find(".item_list").removeClass("completed");
       $ct.removeClass("all_completed");
     } else {
-      $section.find(".item_list").addClass("completed");
+      $section_content.find(".item_list").addClass("completed");
       $ct.addClass("all_completed");
     }
     countItemsAndStatusUpdate();
   });
 
-  $section
+  $section_content
     .on("click", ".delete_btn", (e) => {
       const $ct_item_list = $(e.currentTarget).closest(".item_list");
       $ct_item_list.removeClass("opacity_show");
@@ -50,43 +50,45 @@ $(document).ready(() => {
   $item_filter
     .on("click", "input:button[value='All']", (e) => {
       $(e.currentTarget).parent().attr("filter_category", "All");
-      $section.find(".item_list").css("display", "flex");
+      $section_content.find(".item_list").css("display", "flex");
       $filter_box.css("left", 247).css("width", 38);
     })
     .on("click", "input:button[value='Active']", (e) => {
       $("input:button[value='All']").trigger("click");
       $(e.currentTarget).parent().attr("filter_category", "Active");
-      $section.find(".completed").css("display", "none");
+      $section_content.find(".completed").css("display", "none");
       $filter_box.css("left", 290).css("width", 67);
     })
     .on("click", "input:button[value='Completed']", (e) => {
       $("input:button[value='All']").trigger("click");
       $(e.currentTarget).parent().attr("filter_category", "Completed");
-      $section.find(".item_list:not(.completed)").css("display", "none");
+      $section_content.find(".item_list:not(.completed)").css("display", "none");
       $filter_box.css("left", 362).css("width", 115);
     })
     .on("click", "input:button[value='Clear']", () => {
-      $section.find(".completed").remove();
+      $section_content.find(".completed").remove();
       countItemsAndStatusUpdate();
     });
   $left_items_count_indicator.hover(
-    () => {
-      $section
+    (e) => {
+      $(e.currentTarget).css("color", "#987d25");
+      $section_content
         .find(".item_list.completed")
         .animate({ opacity: 0.3 }, 300);
     },
-    () => {
-      $section
+    (e) => {
+      $(e.currentTarget).css("color", "#757575");
+      $section_content
         .find(".item_list.completed")
         .animate({ opacity: 1 }, 300);
     }
   );
 
   function countItemsAndStatusUpdate() {
-    const total_num = $section.find(".item_list").length;
-    const complete_num = $section.find(".completed").length;
+    const total_num = $section_content.find(".item_list").length;
+    const complete_num = $section_content.find(".completed").length;
     const left_num = total_num - complete_num;
-    showFooter(!!total_num);
+    showIndicatorBox(!!total_num);
     showCompleteAllBtn(!!total_num);
     updateLeftItems(left_num);
     updateAllComplete(left_num);
@@ -106,12 +108,12 @@ $(document).ready(() => {
     $item_filter.find(`input[value=${filter_category}]`).trigger("click");
   }
 
-  function showFooter(isShow) {
-    const $footer = $("footer");
+  function showIndicatorBox(isShow) {
+    const $indicator = $("#indicator");
     if (isShow) {
-      $footer.addClass("opacity_show");
+      $indicator.addClass("opacity_show");
     } else {
-      $footer.removeClass("opacity_show");
+      $indicator.removeClass("opacity_show");
     }
   }
   function updateLeftItems(left_num) {
@@ -144,7 +146,7 @@ $(document).ready(() => {
   }
 
   function addList(todo_item_text) {
-    $section.append(`
+    $section_content.append(`
     <div class="item_list">
        <div class="inner_checkbox">
           <svg class="complete_checkbox_svg" viewBox="0 0 100 100">

@@ -55,14 +55,14 @@ header{
   padding: 10px;
 }
 
-header, footer {
+header, #indicator {
   background: #292D32;
   border-radius: 10px;
   box-shadow:  6px 6px 15px #121416,
   -6px -6px 15px #454951;
   height: 50px;
 }
-footer {
+#indicator {
   display: flex;
   position: relative;
   margin: 15px 0 0 200px;
@@ -72,7 +72,7 @@ footer {
   opacity: 0;
   transition: opacity 0.5s linear;
 }
-footer.opacity_show {
+#indicator.opacity_show {
   display: flex;
   opacity: 1;
   transition: opacity 0.5s linear;
@@ -118,11 +118,7 @@ footer.opacity_show {
 #left_items_count_indicator {
   width: 100px;
   margin: auto 30px;
-  color: #757575;
   transition: color 0.3s linear
-}
-#left_items_count_indicator:hover {
-  color: #987d25;
 }
 #item_filter {
   display: flex;
@@ -275,7 +271,7 @@ footer.opacity_show {
   stroke: #823420;
   transition: all .2s linear;
 }
-footer #filter_box {
+#indicator #filter_box {
   position: absolute;
   width: 38px;
   height: 35px;
