@@ -1,40 +1,40 @@
 body {
-  background-color: #292D32;
-  font-family: 'Raleway', sans-serif;
+  background-color: #292d32;
+  font-family: "Raleway", "Nanum Myeongjo", sans-serif;
   font-weight: lighter;
 }
 #complete_all_btn {
   margin: auto 10px;
   stroke-width: 5;
   width: 40px;
-  fill: #292D32;
+  fill: #292d32;
   opacity: 0;
   transition: opacity 0.2s linear;
 }
 #complete_all_btn:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
 #complete_all_btn .box_line {
   stroke: #626060;
   stroke-dasharray: 320;
   stroke-dashoffset: 0;
-  transition: stroke .2s linear;
+  transition: stroke 0.2s linear;
 }
 #complete_all_btn .check_line {
   stroke: #3e3e3e;
   stroke-dasharray: 75;
   stroke-dashoffset: 75;
-  transition: stroke-dashoffset .2s linear;
+  transition: stroke-dashoffset 0.2s linear;
 }
-#complete_all_btn.all_completed .box_line{
+#complete_all_btn.all_completed .box_line {
   stroke: #248d4c;
   stroke-dashoffset: 0;
-  transition: stroke .2s linear;
+  transition: stroke 0.2s linear;
 }
-#complete_all_btn.all_completed .check_line{
+#complete_all_btn.all_completed .check_line {
   stroke: #248d4c;
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset .3s cubic-bezier(0.09, 0.76, 0.79, 0.19);
+  transition: stroke-dashoffset 0.3s cubic-bezier(0.09, 0.76, 0.98, 0.04);
 }
 
 #todo_window {
@@ -50,16 +50,16 @@ body {
   text-shadow: 0 0 2px #8f9bac;
 }
 
-header{
+header {
   margin-bottom: 15px;
   padding: 10px;
 }
 
-header, #indicator {
-  background: #292D32;
+header,
+#indicator {
+  background: #292d32;
   border-radius: 10px;
-  box-shadow:  6px 6px 15px #121416,
-  -6px -6px 15px #454951;
+  box-shadow: 6px 6px 15px #121416, -6px -6px 15px #454951;
   height: 50px;
 }
 #indicator {
@@ -86,8 +86,8 @@ header, #indicator {
 }
 #item_input {
   color: #b2b2b2;
-  font-family: 'Raleway', sans-serif;
-  background: #2A2D32;
+  font-family: "Raleway", "Nanum Myeongjo", sans-serif;
+  background: #2a2d32;
   border: none;
   font-size: 1.3em;
   width: 100%;
@@ -104,10 +104,9 @@ header, #indicator {
   transition: opacity 0.5s linear;
   flex-direction: row;
   justify-content: space-between;
-  background: #2A2D32;
+  background: #2a2d32;
   border-radius: 15px;
-  box-shadow: inset 5px 5px 15px #1d1d22,
-  inset -5px -5px 7px #3f434a;
+  box-shadow: inset 5px 5px 15px #1d1d22, inset -5px -5px 7px #3f434a;
   height: 55px;
   margin: 15px 0 15px 50px;
 }
@@ -119,7 +118,7 @@ header, #indicator {
   cursor: default;
   width: 100px;
   margin: auto 30px;
-  transition: color 0.3s linear
+  transition: color 0.3s linear;
 }
 #item_filter {
   display: flex;
@@ -132,7 +131,7 @@ header, #indicator {
   transition: box-shadow 0.2s linear;
   font-size: 1em;
   font-weight: lighter;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", "Nanum Myeongjo", sans-serif;
   background: none;
   box-shadow: 0 0 2px 2px transparent;
   border-radius: 4px;
@@ -149,19 +148,19 @@ header, #indicator {
   border: 1px solid #9f9104;
 }
 #item_filter > input[value="All"] {
-  z-index:3;
+  z-index: 3;
   color: darkorange;
 }
 #item_filter > input[value="Active"] {
-  z-index:3;
+  z-index: 3;
   color: firebrick;
 }
 #item_filter > input[value="Completed"] {
-  z-index:3;
+  z-index: 3;
   color: darkolivegreen;
 }
 #item_filter > input[value="Clear"] {
-  z-index:3;
+  z-index: 3;
   margin-right: 5px;
   color: #6e6e6d;
   display: none;
@@ -175,11 +174,11 @@ header, #indicator {
   cursor: pointer;
   align-items: center;
   color: #979ca0;
-  transition: all 0.3s linear
+  transition: all 0.3s linear;
 }
 .item_list .item_text:hover {
   color: #a3c5cf;
-  transition: color 0.2s linear
+  transition: color 0.2s linear;
 }
 .inner_checkbox {
   display: flex;
@@ -191,13 +190,13 @@ header, #indicator {
 .completed .item_text {
   color: #4b4d50;
   text-decoration: line-through;
-  transition: color 0.3s linear
+  transition: color 0.3s linear;
 }
 .inner_checkbox svg {
   margin: 10px;
   stroke-width: 5;
   width: 35px;
-  fill: #292D32;
+  fill: #292d32;
 }
 .inner_checkbox svg:hover {
   cursor: pointer;
@@ -206,71 +205,71 @@ header, #indicator {
   stroke: #626060;
   stroke-dasharray: 320;
   stroke-dashoffset: 0;
-  transition: stroke .2s linear;
+  transition: stroke 0.2s linear;
 }
 .inner_checkbox svg .check_line {
   stroke: #3e3e3e;
   stroke-dasharray: 75;
   stroke-dashoffset: 75;
-  transition: stroke-dashoffset .2s linear;
+  transition: stroke-dashoffset 0.2s linear;
 }
 .item_list.completed svg .box_line {
   stroke: #244a8d;
   stroke-dashoffset: 0;
-  transition: stroke .2s linear;
+  transition: stroke 0.2s linear;
 }
 .item_list.completed svg .check_line {
   stroke: #244a8d;
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset .3s cubic-bezier(0.09, 0.76, 0.79, 0.19);
+  transition: stroke-dashoffset 0.3s cubic-bezier(0.09, 0.76, 0.98, 0.04);
 }
 
 .item_list .delete_btn {
   margin: auto 15px auto 10px;
   stroke-width: 5;
   width: 40px;
-  fill: #292D32;
+  fill: #292d32;
   opacity: 0;
   transition: opacity 0.5s linear;
 }
-.item_list.delete_btn .circle_line{
+.item_list.delete_btn .circle_line {
   stroke: #626060;
   stroke-dasharray: 320;
   stroke-dashoffset: 320;
-  transition: stroke .5s linear;
+  transition: stroke 0.5s linear;
 }
-.item_list .delete_btn .x_line{
+.item_list .delete_btn .x_line {
   stroke: #3e3e3e;
   stroke-dasharray: 75;
   stroke-dashoffset: 75;
-  transition: stroke-dashoffset .5s linear;
+  transition: stroke-dashoffset 0.5s linear;
 }
 
 .item_list:hover .delete_btn {
   cursor: pointer;
   opacity: 1;
-  transition: opacity .2s linear;
+  transition: opacity 0.2s linear;
 }
 
-.item_list:hover .delete_btn .circle_line{
+.item_list:hover .delete_btn .circle_line {
   stroke: #745013;
   stroke-dashoffset: 0;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
-.item_list:hover .delete_btn .x_line{
+.item_list:hover .delete_btn .x_line {
   stroke: #745013;
   stroke-dasharray: 75;
   stroke-dashoffset: 0;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 .item_list .delete_btn:hover .circle_line {
   stroke: #823420;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 .item_list .delete_btn:hover .x_line {
   stroke: #823420;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 #indicator #filter_box {
   position: absolute;
@@ -280,7 +279,7 @@ header, #indicator {
   left: 247px;
   top: 7px;
   background: transparent;
-  box-shadow: inset 3px 3px 5px #1d2023,
-  inset -2px -2px 3px #373b41;
-  transition: left 0.5s cubic-bezier(0.65, 0.01, 0.32, 0.99), width 0.5s cubic-bezier(0.65, 0.01, 0.32, 0.99);
+  box-shadow: inset 3px 3px 5px #1d2023, inset -2px -2px 3px #373b41;
+  transition: left 0.5s cubic-bezier(0.65, 0.01, 0.32, 0.99),
+    width 0.5s cubic-bezier(0.65, 0.01, 0.32, 0.99);
 }

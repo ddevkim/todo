@@ -19,7 +19,7 @@ $(document).ready(() => {
       }
     })
     .on("keyup", (e) => {
-      const input_limit = 40;
+      const input_limit = 44;
       const reg_check_kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
       const ct = e.currentTarget;
       if (checkInputByteLength(ct.value) > input_limit) {
@@ -188,7 +188,7 @@ $(document).ready(() => {
         if (reg_check_kor.test(x)) return 2;
         else return 1;
       }),
-      _.reduce((a, b) => a + b),
+      _.reduce((a, b) => a + b)
     );
   }
 });

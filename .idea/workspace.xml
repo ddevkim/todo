@@ -4,6 +4,8 @@
     <list default="true" id="250684ee-30a6-41d7-b349-4e3505660f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,7 @@
       <workItem from="1595295629324" duration="830000" />
       <workItem from="1595296908460" duration="55210000" />
       <workItem from="1595463685327" duration="58000" />
-      <workItem from="1595463770601" duration="13717000" />
+      <workItem from="1595463770601" duration="16670000" />
     </task>
     <task id="LOCAL-00001" summary="초기 기능 구현 및 css 적용">
       <created>1595409769768</created>
@@ -113,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595477412798</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="limiting todo item input text">
+      <created>1595481588008</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595481588008</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,17 +134,18 @@
     <MESSAGE value="adding opacity animation when hovering left item indicator" />
     <MESSAGE value="(bug_fix) adding opacity animation when hovering left item indicator" />
     <MESSAGE value="change pointer default hovering left item indicator" />
-    <option name="LAST_COMMIT_MESSAGE" value="change pointer default hovering left item indicator" />
+    <MESSAGE value="limiting todo item input text" />
+    <option name="LAST_COMMIT_MESSAGE" value="limiting todo item input text" />
   </component>
   <component name="WindowStateProjectService">
     <state x="538" y="142" key="#CSS" timestamp="1595315297245">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="538" y="142" key="#CSS/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595315297245" />
-    <state x="356" y="23" width="968" height="1027" key="CommitChangelistDialog2" timestamp="1595477412695">
+    <state x="356" y="23" width="968" height="1027" key="CommitChangelistDialog2" timestamp="1595481587879">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="356" y="23" width="968" height="1027" key="CommitChangelistDialog2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595477412695" />
+    <state x="356" y="23" width="968" height="1027" key="CommitChangelistDialog2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595481587879" />
     <state x="613" y="425" key="Github.CreateGistDialog" timestamp="1595390739838">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -172,10 +182,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="340" y="208" key="Vcs.Push.Dialog.v2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595470634347" />
-    <state x="467" y="229" width="746" height="614" key="find.popup" timestamp="1595477001892">
+    <state x="467" y="229" width="746" height="614" key="find.popup" timestamp="1595482498487">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="467" y="229" width="746" height="614" key="find.popup/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595477001892" />
+    <state x="467" y="229" width="746" height="614" key="find.popup/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595482498487" />
     <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup" timestamp="1595391551566">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
