@@ -2,7 +2,7 @@ $(document).ready(() => {
   const $section = $("section");
   const $item_input = $("#item_input");
   const $complete_all_btn = $("#complete_all_btn");
-  const $show_left_items_count = $("#show_left_items_count");
+  const $left_items_count_indicator = $("#left_items_count_indicator");
   const $item_filter = $("#item_filter");
   const $clear_btn = $item_filter.find("input[value='Clear']");
   const $filter_box = $("#filter_box");
@@ -69,6 +69,18 @@ $(document).ready(() => {
       $section.find(".completed").remove();
       countItemsAndStatusUpdate();
     });
+  $left_items_count_indicator.hover(
+    () => {
+      $section
+        .find(".item_list.completed")
+        .animate({ opacity: 0.3 }, 300);
+    },
+    () => {
+      $section
+        .find(".item_list.completed")
+        .animate({ opacity: 1 }, 300);
+    }
+  );
 
   function countItemsAndStatusUpdate() {
     const total_num = $section.find(".item_list").length;
@@ -103,7 +115,7 @@ $(document).ready(() => {
     }
   }
   function updateLeftItems(left_num) {
-    return $show_left_items_count.text(
+    return $left_items_count_indicator.text(
       `${
         left_num < 1
           ? "All Done!"
@@ -116,7 +128,11 @@ $(document).ready(() => {
   function updateAllComplete(left_num) {
     if (!left_num) {
       $complete_all_btn.addClass("all_completed");
-    } else $complete_all_btn.removeClass("all_completed");
+      $left_items_count_indicator.css("color", "#248d4c");
+    } else {
+      $complete_all_btn.removeClass("all_completed");
+      $left_items_count_indicator.css("color", "#b2b2b2");
+    }
     return left_num === 0;
   }
   function showClearButton(complete_num) {

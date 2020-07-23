@@ -115,14 +115,14 @@ footer.opacity_show {
   opacity: 1;
   transition: opacity 0.3s linear;
 }
-#show_left_items_count {
+#left_items_count_indicator {
   width: 100px;
   margin: auto 30px;
   color: #757575;
   transition: color 0.3s linear
 }
-#show_left_items_count:hover {
-  color: rgba(255, 224, 84, 0.59);
+#left_items_count_indicator:hover {
+  color: #987d25;
 }
 #item_filter {
   display: flex;
@@ -178,7 +178,7 @@ footer.opacity_show {
   cursor: pointer;
   align-items: center;
   color: #979ca0;
-  transition: color 0.2s linear
+  transition: all 0.3s linear
 }
 .item_list .item_text:hover {
   color: #a3c5cf;
@@ -194,7 +194,7 @@ footer.opacity_show {
 .completed .item_text {
   color: #4b4d50;
   text-decoration: line-through;
-  transition: color 0.2s linear
+  transition: color 0.3s linear
 }
 .inner_checkbox svg {
   margin: 10px;
