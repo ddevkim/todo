@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="250684ee-30a6-41d7-b349-4e3505660f27" name="Default Changelist" comment="stabilize animation">
+    <list default="true" id="250684ee-30a6-41d7-b349-4e3505660f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -89,7 +89,7 @@
       <workItem from="1595492889615" duration="7652000" />
       <workItem from="1595516174380" duration="34000" />
       <workItem from="1595541836203" duration="96000" />
-      <workItem from="1595541943103" duration="21871000" />
+      <workItem from="1595541943103" duration="25459000" />
     </task>
     <task id="LOCAL-00001" summary="초기 기능 구현 및 css 적용">
       <created>1595409769768</created>
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595495862043</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="stabilize animation">
+      <created>1595570248532</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1595570248532</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,17 +169,18 @@
     <MESSAGE value="limiting todo item input text" />
     <MESSAGE value="Adding Korean Font" />
     <MESSAGE value="adding warning messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding warning messages" />
+    <MESSAGE value="stabilize animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="stabilize animation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="538" y="142" key="#CSS" timestamp="1595315297245">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="538" y="142" key="#CSS/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595315297245" />
-    <state x="356" y="23" width="968" height="1027" key="CommitChangelistDialog2" timestamp="1595568948574">
+    <state x="356" y="23" width="968" height="1027" key="CommitChangelistDialog2" timestamp="1595570248368">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="356" y="23" width="968" height="1027" key="CommitChangelistDialog2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595568948574" />
+    <state x="356" y="23" width="968" height="1027" key="CommitChangelistDialog2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595570248368" />
     <state x="613" y="425" key="Github.CreateGistDialog" timestamp="1595390739838">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -210,10 +218,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="340" y="208" key="Vcs.Push.Dialog.v2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595485041201" />
-    <state x="467" y="229" width="746" height="614" key="find.popup" timestamp="1595569444438">
+    <state x="260" y="71" width="1167" height="849" key="find.popup" timestamp="1595574281722">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="467" y="229" width="746" height="614" key="find.popup/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595569444438" />
+    <state x="260" y="71" width="1167" height="849" key="find.popup/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595574281722" />
     <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup" timestamp="1595569081362">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

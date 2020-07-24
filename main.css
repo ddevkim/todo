@@ -19,10 +19,6 @@ header {
   opacity: 0;
   transition: opacity 0.2s linear;
 }
-#complete_all_btn.opacity_show {
-  transition: opacity 0.2s linear;
-  opacity: 1;
-}
 #complete_all_btn:hover {
   cursor: pointer;
 }
@@ -80,11 +76,7 @@ header {
   opacity: 0;
   transition: opacity 0.5s linear;
 }
-#indicator_bar.opacity_show {
-  display: flex;
-  opacity: 1;
-  transition: opacity 0.5s linear;
-}
+
 #item_input {
   color: #b2b2b2;
   font-family: "Raleway", "Nanum Myeongjo", sans-serif;
@@ -112,10 +104,6 @@ header {
   width: auto;
   margin: 15px 0 15px 50px;
 }
-.item_list.opacity_show {
-  opacity: 1;
-  transition: opacity 0.3s linear;
-}
 #left_items_count_indicator {
   color: #757575;
   cursor: default;
@@ -123,10 +111,9 @@ header {
   margin: auto 30px;
   transition: color 0.3s linear;
 }
-
 #item_filter {
   display: flex;
-  width: 300px;
+  width: 200px;
   justify-content: flex-end;
   margin: auto;
 }
@@ -162,12 +149,6 @@ header {
 #item_filter > input[value="Completed"] {
   z-index: 3;
   color: darkolivegreen;
-}
-#item_filter > input[value="Clear"] {
-  z-index: 3;
-  margin-right: 5px;
-  color: #6e6e6d;
-  display: none;
 }
 .item_list input[type="checkbox"] {
   display: none;
@@ -274,6 +255,26 @@ header {
 .item_list .delete_btn:hover .x_line {
   stroke: #823420;
   transition: all 0.2s linear;
+}
+#indicator_bar #clear_btn {
+  margin: auto;
+  border: none;
+  background: transparent;
+  z-index: 3;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  color: #757575;
+  transition: box-shadow 0.2s linear;
+  border-radius: 4px;
+}
+#indicator_bar #clear_btn:focus {
+  outline: none;
+}
+#indicator_bar #clear_btn:hover {
+  box-shadow: 0 0 2px 2px rgba(146, 146, 146, 0.5);
+  border-radius: 4px;
+  transition: box-shadow 0.2s linear;
 }
 #indicator_bar #filter_box {
   position: absolute;

@@ -26,14 +26,8 @@
               d="M75.44,9.56H24.56c-8.28,0-15,6.72-15,15v50.89c0,8.28,6.72,15,15,15h50.89c8.28,0,15-6.72,15-15V24.56
 	                               C90.44,16.27,83.73,9.56,75.44,9.56z"
             />
-            <polyline
-              class="check_line"
-              points="22.44,59.12 42.96,76.61 74.35,40.85 "
-            />
-            <polyline
-              class="check_line"
-              points="21.59,39.4 42.1,56.89 73.49,21.12 "
-            />
+            <polyline class="check_line" points="22.44,59.12 42.96,76.61 74.35,40.85 " />
+            <polyline class="check_line" points="21.59,39.4 42.1,56.89 73.49,21.12 " />
           </svg>
           <input
             type="text"
@@ -46,9 +40,9 @@
       <section id="content"></section>
       <section id="indicator_bar">
         <span id="left_items_count_indicator"></span>
-        <span id="filter_box"></span>
+        <input type="button" value="Clear" id="clear_btn"/>
         <div id="item_filter" filter_category="All">
-          <input type="button" value="Clear" />
+        <span id="filter_box"></span>
           <input type="button" value="All" />
           <input type="button" value="Active" />
           <input type="button" value="Completed" />

@@ -5,7 +5,7 @@ $(document).ready(() => {
   const $complete_all_btn = $("#complete_all_btn");
   const $left_items_count_indicator = $("#left_items_count_indicator");
   const $item_filter = $("#item_filter");
-  const $clear_btn = $item_filter.find("input[value='Clear']");
+  const $clear_btn = $("#clear_btn");
   const $filter_box = $("#filter_box");
 
   $register_item
@@ -35,7 +35,7 @@ $(document).ready(() => {
   $content
     .on("click", ".delete_btn", (e) => {
       const $delete_item = $(e.currentTarget).closest(".item_list");
-      if ($delete_item.hasClass("completed") || confirm("끝내지도 않았는데 지우려구요?")) {
+      if ($delete_item.hasClass("completed") || confirm("안 끝났는데 지우시게요?")) {
         animateShowAndHide(null, null, $delete_item, 500, () => {
           $delete_item.remove();
           statusUpdate();
@@ -47,115 +47,57 @@ $(document).ready(() => {
       statusUpdate();
     });
 
-  $item_filter
-    .on("click", "input:button[value!='Clear']", (e) => {
-      const $ct = $(e.currentTarget);
-      const filter_category = $ct.val();
-      $ct.parent().attr("filter_category", filter_category);
+  $item_filter.on("click", "input:button", (e) => {
+    const $ct = $(e.currentTarget);
+    const filter_category = $ct.val();
+    $ct.parent().attr("filter_category", filter_category);
 
-      switch (filter_category) {
-        case "All": {
-          animateShowAndHide($content.find(".item_list"), 500);
-          changeFilterBoxPosition(247, 38);
-          break;
-        }
-        case "Active": {
-          animateShowAndHide(
-            $content.find(".item_list").not(".completed"),
-            1000,
-            $content.find(".completed"),
-            500,
-            () => $content.find(".completed").css("display", "none")
-          );
-          changeFilterBoxPosition(290, 67);
-          break;
-        }
-        case "Completed": {
-          animateShowAndHide(
-            $content.find(".completed"),
-            1000,
-            $content.find(".item_list").not(".completed"),
-            500,
-            () => $content.find(".item_list").not(".completed").css("display", "none")
-          );
-          changeFilterBoxPosition(362, 115);
-          break;
-        }
+    switch (filter_category) {
+      case "All": {
+        animateShowAndHide($content.find(".item_list"), 500);
+        changeFilterBoxPosition(247, 38);
+        break;
       }
-    })
-    .on("click", "input:button[value='Clear']", () => {
-      animateShowAndHide(null, null, $content.find(".completed"), 800, () => {
-        $content.find(".completed").remove();
-        statusUpdate(false);
-      });
+      case "Active": {
+        animateShowAndHide(
+          $content.find(".item_list").not(".completed"),
+          1000,
+          $content.find(".completed"),
+          500,
+          () => $content.find(".completed").css("display", "none")
+        );
+        changeFilterBoxPosition(290, 67);
+        break;
+      }
+      case "Completed": {
+        animateShowAndHide(
+          $content.find(".completed"),
+          1000,
+          $content.find(".item_list").not(".completed"),
+          500,
+          () => $content.find(".item_list").not(".completed").css("display", "none")
+        );
+        changeFilterBoxPosition(362, 115);
+        break;
+      }
+    }
+  });
+  $clear_btn.on("click", () => {
+    animateShowAndHide(null, null, $content.find(".completed"), 800, () => {
+      $content.find(".completed").remove();
+      statusUpdate(false);
     });
-
+  });
   $left_items_count_indicator.hover(
     (e) => {
       $(e.currentTarget).css("color", "#987d25");
-      $content.find(".item_list.completed").animate({ opacity: 0.3 }, 200);
+      $content.find(".item_list.completed").stop(true, true).animate({ opacity: 0.3 }, 100);
     },
     (e) => {
       $(e.currentTarget).css("color", "#757575");
-      $content.find(".item_list.completed").animate({ opacity: 1 }, 200);
+      $content.find(".item_list.completed").stop(true, true).animate({ opacity: 1 }, 100);
     }
   );
-
-  function changeFilterBoxPosition(left, width) {
-    $filter_box.css("left", left).css("width", width);
-  }
-
-  function statusUpdate(doFilter = true) {
-    const total_num = $content.find(".item_list").length;
-    const complete_num = $content.find(".completed").length;
-    const left_num = total_num - $content.find(".completed").length;
-    showIndicatorBar(total_num);
-    showClearButton(complete_num);
-    showCompleteAllBtn(total_num);
-    updateLeftItemNumber(left_num);
-    updateAllComplete(left_num);
-    doFilter && filterCategory();
-  }
-
-  function showCompleteAllBtn(total_num) {
-    animateToggleOpacity($complete_all_btn, !!total_num, 1000, 300);
-  }
-  function filterCategory() {
-    const filter_category = $item_filter.attr("filter_category");
-    $item_filter.find(`input[value=${filter_category}]`).trigger("click");
-  }
-  function showIndicatorBar(total_num) {
-    animateToggleOpacity($indicator_bar, !!total_num, 500, 1000);
-  }
-  function updateLeftItemNumber(left_num) {
-    return $left_items_count_indicator.text(
-      `${
-        left_num < 1
-          ? "All Done!"
-          : left_num < 2
-          ? left_num + " item left"
-          : left_num + " items left"
-      }`
-    );
-  }
-  function updateAllComplete(left_num) {
-    if (!left_num) {
-      $complete_all_btn.addClass("all_completed");
-      $left_items_count_indicator.css("color", "#248d4c");
-    } else {
-      $complete_all_btn.removeClass("all_completed");
-      $left_items_count_indicator.css("color", "#757575");
-    }
-    return left_num === 0;
-  }
-  function showClearButton(complete_num) {
-    if (!!complete_num) {
-      $clear_btn.css("display", "inline");
-    } else {
-      $clear_btn.css("display", "none");
-    }
-  }
-
   function addList(todo_item_text) {
     $content.append(`
     <div class="item_list">
@@ -174,11 +116,57 @@ $(document).ready(() => {
       </svg>
     </div>`);
     $(document).ready(() => {
-      animateShowAndHide($content.find(".item_list").last(), 100)
-      // $content.find(".item_list").last().addClass("opacity_show");
+      animateShowAndHide($content.find(".item_list").last(), 100);
     });
   }
-
+  function statusUpdate(doFilter = true) {
+    const total_num = $content.find(".item_list").length;
+    const complete_num = $content.find(".completed").length;
+    const left_num = total_num - complete_num;
+    showIndicatorBar(total_num);
+    showClearButton(complete_num);
+    showCompleteAllBtn(total_num);
+    updateLeftItemNumber(left_num);
+    updateAllComplete(left_num);
+    doFilter && filterCategory();
+  }
+  function showCompleteAllBtn(total_num) {
+    animateToggleOpacity($complete_all_btn, !!total_num, 1000, 500);
+  }
+  function showIndicatorBar(total_num) {
+    animateToggleOpacity($indicator_bar, !!total_num, 500, 1000);
+  }
+  function showClearButton(complete_num) {
+    animateToggleOpacity($clear_btn, !!complete_num, 500, 500);
+  }
+  function filterCategory() {
+    const filter_category = $item_filter.attr("filter_category");
+    $item_filter.find(`input[value=${filter_category}]`).trigger("click");
+  }
+  function updateLeftItemNumber(left_num) {
+    return $left_items_count_indicator.text(
+      `${
+        left_num < 1
+          ? "All Done!"
+          : left_num < 2
+          ? left_num + " item left"
+          : left_num + " items left"
+      }`
+    );
+  }
+  function changeFilterBoxPosition(left, width) {
+    $filter_box.css("left", left).css("width", width);
+  }
+  function updateAllComplete(left_num) {
+    if (!left_num) {
+      $complete_all_btn.addClass("all_completed");
+      $left_items_count_indicator.css("color", "#248d4c");
+    } else {
+      $complete_all_btn.removeClass("all_completed");
+      $left_items_count_indicator.css("color", "#757575");
+    }
+    return left_num === 0;
+  }
   function limitInputText($ct, width_limit) {
     const reg_check_kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
     const text = $ct.val();
@@ -201,6 +189,8 @@ $(document).ready(() => {
     $hide && $hide.stop(true, true).animate({ opacity: 0 }, hide_time, after_hide_cb);
   }
   function animateToggleOpacity($el, condition, show_time, hide_time) {
-    condition ? $el.stop(true, true).animate({ opacity: 1}, show_time) : $el.stop(true, true).animate({ opacity: 0 }, hide_time);
+    condition
+      ? $el.stop(true, true).animate({ opacity: 1 }, show_time)
+      : $el.stop(true, true).animate({ opacity: 0 }, hide_time);
   }
 });
