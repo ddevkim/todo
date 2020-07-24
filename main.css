@@ -3,6 +3,14 @@ body {
   font-family: "Raleway", "Nanum Myeongjo", sans-serif;
   font-weight: lighter;
 }
+header {
+  background: #292d32;
+  border-radius: 10px;
+  box-shadow: 6px 6px 15px #121416, -6px -6px 15px #454951;
+  height: 50px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
 #complete_all_btn {
   margin: auto 10px;
   stroke-width: 5;
@@ -10,6 +18,10 @@ body {
   fill: #292d32;
   opacity: 0;
   transition: opacity 0.2s linear;
+}
+#complete_all_btn.opacity_show {
+  transition: opacity 0.2s linear;
+  opacity: 1;
 }
 #complete_all_btn:hover {
   cursor: pointer;
@@ -36,7 +48,12 @@ body {
   stroke-dashoffset: 0;
   transition: stroke-dashoffset 0.3s cubic-bezier(0.09, 0.76, 0.98, 0.04);
 }
-
+#register_item {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
 #todo_window {
   width: 700px;
   height: auto;
@@ -45,49 +62,33 @@ body {
 }
 #todo_window > p {
   margin: 10px auto;
+  height: 130px;
   font-size: 5em;
   color: transparent;
-  text-shadow: 0 0 2px #8f9bac;
+  text-shadow: 0 0 2px #4f5b6c;
 }
-
-header {
-  margin-bottom: 15px;
-  padding: 10px;
-}
-
-header,
-#indicator {
+#indicator_bar {
   background: #292d32;
   border-radius: 10px;
   box-shadow: 6px 6px 15px #121416, -6px -6px 15px #454951;
   height: 50px;
-}
-#indicator {
   display: flex;
   position: relative;
   margin: 15px 0 0 200px;
   flex-direction: row;
   justify-content: space-between;
-  height: 50px;
   opacity: 0;
   transition: opacity 0.5s linear;
 }
-#indicator.opacity_show {
+#indicator_bar.opacity_show {
   display: flex;
   opacity: 1;
   transition: opacity 0.5s linear;
 }
-
-#register {
-  display: flex;
-  height: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-}
 #item_input {
   color: #b2b2b2;
   font-family: "Raleway", "Nanum Myeongjo", sans-serif;
-  background: #2a2d32;
+  background: #292d32;
   border: none;
   font-size: 1.3em;
   width: 100%;
@@ -108,6 +109,7 @@ header,
   border-radius: 15px;
   box-shadow: inset 5px 5px 15px #1d1d22, inset -5px -5px 7px #3f434a;
   height: 55px;
+  width: auto;
   margin: 15px 0 15px 50px;
 }
 .item_list.opacity_show {
@@ -115,11 +117,13 @@ header,
   transition: opacity 0.3s linear;
 }
 #left_items_count_indicator {
+  color: #757575;
   cursor: default;
   width: 100px;
   margin: auto 30px;
   transition: color 0.3s linear;
 }
+
 #item_filter {
   display: flex;
   width: 300px;
@@ -271,7 +275,7 @@ header,
   stroke: #823420;
   transition: all 0.2s linear;
 }
-#indicator #filter_box {
+#indicator_bar #filter_box {
   position: absolute;
   width: 38px;
   height: 35px;

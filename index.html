@@ -10,9 +10,8 @@
     ></script>
     <script src="https://unpkg.com/fxjs/dist/fx.min.js"></script>
     <link rel="stylesheet" href="main.css" />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&family=Raleway:wght@100;200;300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Raleway:wght@100;200;300&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -20,7 +19,7 @@
     <div id="todo_window">
       <p>todos</p>
       <header>
-        <div id="register">
+        <div id="register_item">
           <svg id="complete_all_btn" viewBox="0 0 100 100">
             <path
               class="box_line"
@@ -39,26 +38,22 @@
           <input
             type="text"
             id="item_input"
-            class="register_item"
             placeholder="(할 일 입력) 오늘 할 일을 내일로 미루자"
             autofocus
           />
         </div>
       </header>
-
       <section id="content"></section>
-
-      <section id="indicator">
+      <section id="indicator_bar">
         <span id="left_items_count_indicator"></span>
         <span id="filter_box"></span>
-        <div id="item_filter">
+        <div id="item_filter" filter_category="All">
           <input type="button" value="Clear" />
           <input type="button" value="All" />
           <input type="button" value="Active" />
           <input type="button" value="Completed" />
         </div>
       </section>
-
       <script src="app.js"></script>
     </div>
   </body>
