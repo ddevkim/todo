@@ -6,7 +6,7 @@ body {
 header {
   background: #292d32;
   border-radius: 10px;
-  box-shadow: 6px 6px 15px #121416, -6px -6px 15px #454951;
+  box-shadow: 6px 6px 15px #121416, -4px -4px 9px #454951;
   height: 50px;
   margin-bottom: 15px;
   padding: 10px;
@@ -66,7 +66,7 @@ header {
 #indicator_bar {
   background: #292d32;
   border-radius: 10px;
-  box-shadow: 6px 6px 15px #121416, -6px -6px 15px #454951;
+  box-shadow: 6px 6px 15px #121416, -3px -3px 7px #454951;
   height: 50px;
   display: flex;
   position: relative;
@@ -74,7 +74,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   opacity: 0;
-  transition: opacity 0.5s linear;
 }
 
 #item_input {
@@ -93,8 +92,6 @@ header {
 }
 .item_list {
   display: flex;
-  opacity: 0;
-  transition: opacity 0.5s linear;
   flex-direction: row;
   justify-content: space-between;
   background: #2a2d32;
@@ -103,12 +100,13 @@ header {
   height: 55px;
   width: auto;
   margin: 15px 0 15px 50px;
+  opacity: 0;
 }
-#left_items_count_indicator {
+#left_items_counter {
   color: #757575;
   cursor: default;
-  width: 100px;
-  margin: auto 30px;
+  width: 120px;
+  margin: auto 20px;
   transition: color 0.3s linear;
 }
 #item_filter {
