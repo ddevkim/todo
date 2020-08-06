@@ -25,16 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="250684ee-30a6-41d7-b349-4e3505660f27" name="Default Changelist" comment="localstorage에 DB 구축&#10;함수 모듈화">
-      <change afterPath="$PROJECT_DIR$/lib/DB_handling.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/animation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/data_handling.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/eventHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/html_template.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils.js" afterDir="false" />
+    <list default="true" id="250684ee-30a6-41d7-b349-4e3505660f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/animation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eventHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eventHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/html_template.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/html_template.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595570248532</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="database set to localstorage&#10;make modules">
+      <created>1596700115532</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596700115532</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,17 +256,18 @@
     <MESSAGE value="adding warning messages" />
     <MESSAGE value="stabilize animation" />
     <MESSAGE value="localstorage에 DB 구축&#10;함수 모듈화" />
-    <option name="LAST_COMMIT_MESSAGE" value="localstorage에 DB 구축&#10;함수 모듈화" />
+    <MESSAGE value="database set to localstorage&#10;make modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="database set to localstorage&#10;make modules" />
   </component>
   <component name="WindowStateProjectService">
     <state x="538" y="142" key="#CSS" timestamp="1595315297245">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="538" y="142" key="#CSS/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595315297245" />
-    <state x="0" y="23" width="1680" height="1027" key="CommitChangelistDialog2" timestamp="1596699982631">
+    <state x="0" y="23" width="1680" height="1027" key="CommitChangelistDialog2" timestamp="1596700115327">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="0" y="23" width="1680" height="1027" key="CommitChangelistDialog2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1596699982631" />
+    <state x="0" y="23" width="1680" height="1027" key="CommitChangelistDialog2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1596700115327" />
     <state x="613" y="425" key="Github.CreateGistDialog" timestamp="1595390739838">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -297,15 +301,15 @@
     </state>
     <state x="479" y="23" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1595542024877" />
     <state x="208" y="55" key="SettingsEditor/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1596682814333" />
-    <state x="340" y="208" key="Vcs.Push.Dialog.v2" timestamp="1596519585639">
+    <state x="340" y="208" key="Vcs.Push.Dialog.v2" timestamp="1596700121491">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="340" y="208" key="Vcs.Push.Dialog.v2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1596519585639" />
-    <state x="260" y="71" width="1167" height="849" key="find.popup" timestamp="1596698005101">
+    <state x="340" y="208" key="Vcs.Push.Dialog.v2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1596700121491" />
+    <state x="260" y="71" width="1167" height="849" key="find.popup" timestamp="1596705569588">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="260" y="71" width="1167" height="849" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1596666102263" />
-    <state x="260" y="71" width="1167" height="849" key="find.popup/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1596698005101" />
+    <state x="260" y="71" width="1167" height="849" key="find.popup/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1596705569588" />
     <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup" timestamp="1596695393295">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

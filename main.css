@@ -163,6 +163,10 @@ header {
   color: #a3c5cf;
   transition: color 0.2s linear;
 }
+.message {
+  align-items: center;
+  color: #979ca0;
+}
 .inner_checkbox {
   display: flex;
   width: 100%;
