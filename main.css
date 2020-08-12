@@ -326,7 +326,7 @@ header {
   height: 50px;
   display: flex;
   position: relative;
-  margin: 15px 0 0 200px;
+  margin: 15px 0 0 150px;
   flex-direction: row;
   justify-content: space-between;
   opacity: 0;
@@ -362,8 +362,8 @@ header {
 #left_items_counter {
   color: #757575;
   cursor: crosshair;
-  width: 120px;
-  margin: auto 20px;
+  width: 180px;
+  margin: auto;
   transition: color 0.3s linear;
 }
 #item_filter {
@@ -540,7 +540,7 @@ header {
   width: 38px;
   height: 35px;
   border-radius: 8px;
-  left: 247px;
+  left: 299px;
   top: 7px;
   background: transparent;
   box-shadow: inset 3px 3px 5px #1d2023, inset -2px -2px 3px #373b41;
