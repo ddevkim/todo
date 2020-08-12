@@ -21,7 +21,7 @@
     <div class="account_window" id="signup_window">
       <h1>sign up</h1>
       <div class="input_box">
-        <label for="signup_user_id">Name</label>
+        <label for="signup_user_id">Name&nbsp&nbsp&nbsp<span id="id_exist_message" style="color: #f7713b"></span></label>
         <input type="text" id="signup_user_id">
         <label for="signup_user_pw">Input password</label>
         <input type="password" id="signup_user_pw">
@@ -52,6 +52,10 @@
         </div>
       </div>
     </div>
+  </div>
+  <div id="account_control">
+    <div class="account_btn" id="main_welcome"></div>
+    <div class="account_btn" id="main_logout">LogOut</div>
   </div>
     <div id="todo_window">
       <p>todos</p>

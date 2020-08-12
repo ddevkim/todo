@@ -104,12 +104,15 @@ body {
   background-color: #292d32;
   font-family: "Raleway", "Nanum Myeongjo", sans-serif;
   font-weight: lighter;
+  min-width: 875px;
+
 }
 .modal {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
   opacity: 0.8;
+  background-image: url("images/access_page_background.jpg");
 }
 #account {
   display: flex;
@@ -150,6 +153,9 @@ body {
   font-weight: bold;
   margin: 10px 0 10px 30px;
   width: 178px
+}
+#account label:first-child {
+  width: 500px;
 }
 #account input {
   box-sizing: border-box;
@@ -195,6 +201,64 @@ body {
   font-weight: normal;
   height: 30px;
 }
+#account_control {
+  display:flex;
+  flex-direction: column;
+  width: 230px;
+  position: fixed;
+  top: 20px;
+  left: calc(100% - 260px);
+}
+@media screen and (max-width: 830px) {
+  #account_control {
+    left: 568px;
+  }
+}
+.account_btn {
+  opacity: 0.8;
+  font-family: "Raleway", "Nanum Myeongjo", sans-serif;
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #ffffff;
+  width: 90px;
+  height: 40px;
+  text-align: center;
+  margin: 5px 0 5px auto;
+  outline: none;
+  border: solid 0 transparent;
+  cursor: pointer;
+  line-height: 38px;
+  position: relative;
+  border-radius: 15px;
+  background: linear-gradient(60deg, #ab6724, #ae503d, #9f3351, #714878, #5073b8, #0c7282, #057f6e, #487754);
+}
+.account_btn:before {
+  content: "";
+  z-index:1;
+  position:absolute;
+  display:block;
+  width:100%;
+  height:70%;
+  top:15%;
+  left:0;
+  transition: 0.3s opacity ease-in-out;
+  filter:blur(15px);
+  opacity:0;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+.account_btn:hover:before {
+  opacity:1;
+  transition: 0.3s opacity ease-in-out;
+  filter:blur(15px);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
+#account_control #main_welcome {
+  padding: 0 20px;
+  width: auto;
+  cursor: default;
+}
+
 header {
   background: #292d32;
   border-radius: 10px;
@@ -275,6 +339,7 @@ header {
   border: none;
   font-size: 1.3em;
   width: 100%;
+  margin: 0 auto;
 }
 #item_input:focus {
   outline: none;
@@ -296,7 +361,7 @@ header {
 }
 #left_items_counter {
   color: #757575;
-  cursor: default;
+  cursor: crosshair;
   width: 120px;
   margin: auto 20px;
   transition: color 0.3s linear;

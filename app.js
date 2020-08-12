@@ -1,17 +1,19 @@
-import { getDBTableData, updateDBTable } from "./lib/DB_handling.js";
+import { getDBTableData } from "./lib/DB_handling.js";
 import { eventHandler } from "./lib/eventHandler.js";
-import { initialScreenUpdate } from "./lib/html_template.js";
-import {accountWindowControl} from "./lib/animation.js";
+import { accountWindowControl } from "./lib/animation.js";
+import { getCurrentUser } from "./lib/data_handling.js";
+import {initialScreenUpdate} from "./lib/eventHandler.js";
 Object.entries(_).map(([k, v]) => (window[k] = v));
 
 $(document).ready(() => {
-  accountWindowControl(true, true, false);
-  const db_table = "todo_item_list";
-  const data = { [db_table]: getDBTableData(db_table) || [] };
-  const $main = $("#todo_window");
-  initialScreenUpdate($main, data, db_table);
-  eventHandler($main, data, db_table);
-  window.onbeforeunload = () => {
-    updateDBTable(db_table, data);
-  };
+  const current_user = getCurrentUser();
+  let item_list_data = {};
+  if (!current_user) {
+    accountWindowControl(true, true, false);
+  }
+  else {
+    item_list_data = getDBTableData(`todo_items_${current_user}`)|| {};
+    initialScreenUpdate(item_list_data["item_list"], current_user );
+  }
+  eventHandler(item_list_data);
 });
