@@ -1,0 +1,23 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddevkim/todo.git"
+  },
+  "author": "jaemin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ddevkim/todo/issues"
+  },
+  "homepage": "https://github.com/ddevkim/todo#readme",
+  "dependencies": {
+    "fxjs2": "^0.16.3",
+    "prettier": "^2.0.5"
+  }
+}
