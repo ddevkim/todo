@@ -21,15 +21,17 @@
     <div class="account_window" id="signup_window">
       <h1>sign up</h1>
       <div class="input_box">
-        <label for="signup_user_id">Name&nbsp&nbsp&nbsp<span id="id_exist_message" style="color: #f7713b"></span></label>
-        <input type="text" id="signup_user_id">
+        <label for="signup_user_name">Name&nbsp&nbsp
+                                    &nbsp<span class="message" id="username_warning_message"
+                                               style="color: #f7713b"></span></label>
+        <input type="text" id="signup_user_name">
         <label for="signup_user_pw">Input password</label>
         <input type="password" id="signup_user_pw">
         <label for="signup_user_pw_check">Confirm password</label>
         <input type="password" id="signup_user_pw_check">
       </div>
       <div class="submit">
-        <p class="error_message"></p>
+        <p class="error_message message"></p>
         <input id="signup_btn" type="button" value="Sign up">
         <div class="login_text">
         Already have an account?&nbsp&nbsp&nbsp<span class="page_btn" id="goto_login">Log In</span>
@@ -39,13 +41,13 @@
     <div class="account_window" id="login_window">
       <h1>Log In</h1>
       <div class="input_box">
-        <label for="login_user_id">Name</label>
-        <input type="text" id="login_user_id">
+        <label for="login_user_name">Name</label>
+        <input type="text" id="login_user_name">
         <label for="login_user_pw">Input password</label>
         <input type="password" id="login_user_pw">
       </div>
       <div class="submit">
-        <p class="error_message"></p>
+        <p class="error_message message"></p>
         <input id="login_btn" type="button" value="Log In">
         <div class="login_text">
           Don't have account?&nbsp<span class="page_btn" id="goto_signup">Create Account</span>
