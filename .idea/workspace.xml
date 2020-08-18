@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:db_localstorage" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="250684ee-30a6-41d7-b349-4e3505660f27" name="Default Changelist" comment="">
+    <list default="true" id="250684ee-30a6-41d7-b349-4e3505660f27" name="Default Changelist" comment="add message&#10;change message">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/DB_handling.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/DB_handling.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/animation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/eventHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/eventHandler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,9 +42,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -27,10 +54,42 @@
         <option value="jaemin &lt;jmk@marpple.com&gt;" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="db_localstorage" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="login" />
+                    <option name="lastUsedInstant" value="1597029085" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="db_localstorage" />
+                    <option name="lastUsedInstant" value="1596519503" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1596519502" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -52,10 +111,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
+    <property name="last.edited.regexp" value="엉ㅇㅇ어자" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/todo/index.html" useBuiltInWebServerPort="true">
@@ -154,11 +214,48 @@
       <option name="project" value="LOCAL" />
       <updated>1595570248532</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="database set to localstorage&#10;make modules">
+      <created>1596700115532</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596700115532</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add message&#10;change message">
+      <created>1596706950301</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596706950301</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="db_localstorage" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="초기 기능 구현 및 css 적용" />
@@ -170,17 +267,24 @@
     <MESSAGE value="Adding Korean Font" />
     <MESSAGE value="adding warning messages" />
     <MESSAGE value="stabilize animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="stabilize animation" />
+    <MESSAGE value="localstorage에 DB 구축&#10;함수 모듈화" />
+    <MESSAGE value="database set to localstorage&#10;make modules" />
+    <MESSAGE value="add message&#10;change message" />
+    <option name="LAST_COMMIT_MESSAGE" value="add message&#10;change message" />
   </component>
   <component name="WindowStateProjectService">
     <state x="538" y="142" key="#CSS" timestamp="1595315297245">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="538" y="142" key="#CSS/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595315297245" />
-    <state x="356" y="23" width="968" height="1027" key="CommitChangelistDialog2" timestamp="1595570248368">
+    <state x="340" y="121" key="#Intentions" timestamp="1596768637943">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="356" y="23" width="968" height="1027" key="CommitChangelistDialog2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595570248368" />
+    <state x="340" y="121" key="#Intentions/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1596768637943" />
+    <state x="0" y="23" width="1680" height="1027" key="CommitChangelistDialog2" timestamp="1596709382009">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="0" y="23" width="1680" height="1027" key="CommitChangelistDialog2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1596709382009" />
     <state x="613" y="425" key="Github.CreateGistDialog" timestamp="1595390739838">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -209,22 +313,27 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1628" height="262" key="GridCell.Tab.0.right/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595485048265" />
-    <state x="208" y="55" key="SettingsEditor" timestamp="1595562405408">
+    <state x="208" y="55" key="SettingsEditor" timestamp="1596790058597">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="479" y="23" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1595542024877" />
-    <state x="208" y="55" key="SettingsEditor/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595562405408" />
-    <state x="340" y="208" key="Vcs.Push.Dialog.v2" timestamp="1595485041201">
+    <state x="208" y="55" key="SettingsEditor/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1596790058597" />
+    <state x="340" y="208" key="Vcs.Push.Dialog.v2" timestamp="1597029091584">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="340" y="208" key="Vcs.Push.Dialog.v2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595485041201" />
-    <state x="260" y="71" width="1167" height="849" key="find.popup" timestamp="1595574281722">
+    <state x="340" y="208" key="Vcs.Push.Dialog.v2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1597029091584" />
+    <state x="603" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596706919082">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="260" y="71" width="1167" height="849" key="find.popup/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595574281722" />
-    <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup" timestamp="1595569081362">
+    <state x="603" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1596706919082" />
+    <state x="260" y="71" width="1167" height="849" key="find.popup" timestamp="1597043661585">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1595569081362" />
+    <state x="260" y="71" width="1167" height="849" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1596666102263" />
+    <state x="260" y="71" width="1167" height="849" key="find.popup/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1597043661585" />
+    <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup" timestamp="1596695393295">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup/1680.-141.1920.1057/-1920.-141.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1596695393295" />
   </component>
 </project>

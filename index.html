@@ -16,6 +16,49 @@
     />
   </head>
   <body>
+  <div id="account">
+    <div class="modal"></div>
+    <div class="account_window" id="signup_window">
+      <h1>sign up</h1>
+      <div class="input_box">
+        <label for="signup_user_name">Name&nbsp&nbsp
+                                    &nbsp<span class="message" id="username_warning_message"
+                                               style="color: #f7713b"></span></label>
+        <input type="text" id="signup_user_name">
+        <label for="signup_user_pw">Input password</label>
+        <input type="password" id="signup_user_pw">
+        <label for="signup_user_pw_check">Confirm password</label>
+        <input type="password" id="signup_user_pw_check">
+      </div>
+      <div class="submit">
+        <p class="error_message message"></p>
+        <input id="signup_btn" type="button" value="Sign up">
+        <div class="login_text">
+        Already have an account?&nbsp&nbsp&nbsp<span class="page_btn" id="goto_login">Log In</span>
+        </div>
+      </div>
+    </div>
+    <div class="account_window" id="login_window">
+      <h1>Log In</h1>
+      <div class="input_box">
+        <label for="login_user_name">Name</label>
+        <input type="text" id="login_user_name">
+        <label for="login_user_pw">Input password</label>
+        <input type="password" id="login_user_pw">
+      </div>
+      <div class="submit">
+        <p class="error_message message"></p>
+        <input id="login_btn" type="button" value="Log In">
+        <div class="login_text">
+          Don't have account?&nbsp<span class="page_btn" id="goto_signup">Create Account</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="account_control">
+    <div class="account_btn" id="main_welcome" hidden></div>
+    <div class="account_btn" id="main_logout" hidden>LogOut</div>
+  </div>
     <div id="todo_window">
       <p>todos</p>
       <header>
@@ -32,14 +75,13 @@
           <input
             type="text"
             id="item_input"
-            placeholder="(할 일 입력) 오늘 할 일을 내일로 미루자"
-            autofocus
+            placeholder="What needs to be done?"
           />
         </div>
       </header>
       <section id="content"></section>
       <section id="indicator_bar">
-        <span id="left_items_count_indicator"></span>
+        <span id="left_items_counter"></span>
         <input type="button" value="Clear" id="clear_btn"/>
         <div id="item_filter" filter_category="All">
         <span id="filter_box"></span>
@@ -48,7 +90,7 @@
           <input type="button" value="Completed" />
         </div>
       </section>
-      <script src="app.js"></script>
+      <script type="module" src="app.js"></script>
     </div>
   </body>
 </html>
