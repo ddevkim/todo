@@ -347,7 +347,7 @@ header {
 #item_input::placeholder {
   color: #494949;
 }
-.item_list {
+.todo_item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -405,18 +405,18 @@ header {
   z-index: 3;
   color: darkolivegreen;
 }
-.item_list input[type="checkbox"] {
+.todo_item input[type="checkbox"] {
   display: none;
   pointer-events: none;
 }
-.item_list .item_text {
+.todo_item .item_text {
   display: flex;
   cursor: pointer;
   align-items: center;
   color: #979ca0;
   transition: all 0.3s linear;
 }
-.item_list .item_text:hover {
+.todo_item .item_text:hover {
   color: #a3c5cf;
   transition: color 0.2s linear;
 }
@@ -457,18 +457,18 @@ header {
   stroke-dashoffset: 75;
   transition: stroke-dashoffset 0.2s linear;
 }
-.item_list.completed svg .box_line {
+.todo_item.completed svg .box_line {
   stroke: #244a8d;
   stroke-dashoffset: 0;
   transition: stroke 0.2s linear;
 }
-.item_list.completed svg .check_line {
+.todo_item.completed svg .check_line {
   stroke: #244a8d;
   stroke-dashoffset: 0;
   transition: stroke-dashoffset 0.3s cubic-bezier(0.09, 0.76, 0.98, 0.04);
 }
 
-.item_list .delete_btn {
+.todo_item .delete_btn {
   margin: auto 15px auto 10px;
   stroke-width: 5;
   width: 40px;
@@ -476,42 +476,42 @@ header {
   opacity: 0;
   transition: opacity 0.5s linear;
 }
-.item_list.delete_btn .circle_line {
+.todo_item.delete_btn .circle_line {
   stroke: #626060;
   stroke-dasharray: 320;
   stroke-dashoffset: 320;
   transition: stroke 0.5s linear;
 }
-.item_list .delete_btn .x_line {
+.todo_item .delete_btn .x_line {
   stroke: #3e3e3e;
   stroke-dasharray: 75;
   stroke-dashoffset: 75;
   transition: stroke-dashoffset 0.5s linear;
 }
 
-.item_list:hover .delete_btn {
+.todo_item:hover .delete_btn {
   cursor: pointer;
   opacity: 1;
   transition: opacity 0.2s linear;
 }
 
-.item_list:hover .delete_btn .circle_line {
+.todo_item:hover .delete_btn .circle_line {
   stroke: #745013;
   stroke-dashoffset: 0;
   transition: all 0.2s linear;
 }
-.item_list:hover .delete_btn .x_line {
+.todo_item:hover .delete_btn .x_line {
   stroke: #745013;
   stroke-dasharray: 75;
   stroke-dashoffset: 0;
   transition: all 0.2s linear;
 }
 
-.item_list .delete_btn:hover .circle_line {
+.todo_item .delete_btn:hover .circle_line {
   stroke: #823420;
   transition: all 0.2s linear;
 }
-.item_list .delete_btn:hover .x_line {
+.todo_item .delete_btn:hover .x_line {
   stroke: #823420;
   transition: all 0.2s linear;
 }
