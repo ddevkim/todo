@@ -2,7 +2,7 @@ import {
   createTables,
   readData,
   readSessionData,
-  createIndexManager,
+  setIndexing,
 } from "./lib/DB_handling.js";
 import { eventHandlers } from "./lib/eventHandlers.js";
 import { accountWindowControl } from "./lib/animation.js";
@@ -14,7 +14,7 @@ $(document).ready(async () => {
   const user_id = readSessionData("user_id");
   //DB 테이블 생성
   createTables([DB_accounts, DB_items]);
-  createIndexManager(DB_items, ["user_id", "item_text"]);
+  setIndexing(DB_items, ["user_id", "item_text"]);
   eventHandlers();
   //계정 접속창 제어 (세션에 유저가 없는 경우 계정 접속창 띄우기)
   accountWindowControl(
